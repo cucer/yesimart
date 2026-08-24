@@ -642,3 +642,102 @@ footer {
 .about-section .about {
   box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.15);
 }
+
+/* --- Press section --- */
+.press-section {
+  padding-bottom: 5rem;
+}
+
+.press-card {
+  display: block;
+  height: 100%;
+  padding: 1.75rem 1.5rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  border-left: 0.25rem solid #64a19d;
+  box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.08);
+  color: #161616;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.press-card:hover,
+.press-card:focus {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.14);
+  color: #161616;
+  text-decoration: none;
+}
+
+.press-card-source {
+  display: block;
+  font-family: 'Varela Round';
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  color: #467370;
+  margin-bottom: 0.75rem;
+}
+
+.press-card-source i {
+  margin-right: 0.4rem;
+}
+
+.press-card-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: #161616;
+  margin-bottom: 1.25rem;
+}
+
+.press-card-link {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.03rem;
+  color: #161616;
+  opacity: 0.65;
+}
+
+.press-card-link i {
+  margin-left: 0.35rem;
+  transition: transform 0.2s ease;
+}
+
+.press-card:hover .press-card-link i {
+  transform: translateX(0.25rem);
+}
+
+.press-video {
+  margin-top: 2rem;
+}
+
+.press-video-heading {
+  font-family: 'Varela Round';
+  font-size: 1.1rem;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.video-embed {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
