@@ -649,16 +649,27 @@ footer {
 }
 
 .press-card {
+  position: relative;
   display: block;
   height: 100%;
   padding: 1.75rem 1.5rem;
   background-color: #fff;
   border-radius: 0.5rem;
-  border-left: 0.25rem solid #64a19d;
   box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.08);
   color: #161616;
   text-decoration: none;
+  overflow: hidden;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.press-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0.25rem;
+  background-color: #64a19d;
 }
 
 .press-card:hover,
